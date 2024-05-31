@@ -18,10 +18,9 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class RewardsConfig {
-	private final DataSource dataSource;
+	private DataSource dataSource;
 
-	// Constructor to inject the DataSource
-	public RewardsConfig(DataSource dataSource) {
+    public RewardsConfig(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 
